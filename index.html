@@ -9,10 +9,13 @@
     </head>
 
     <body>
+        <script src="myscript.js"></script>
         <div class="header">
             <i class="fas fa-project-diagram" id="logo"></i>
 
-            <ul>
+            <i class="fas fa-bars" id="show" onclick="myfun()"></i>
+
+            <ul id="headerList">
                 <li><i class="fas fa-home" id="bar"></i></li>
                 <li href="#">About</li>
                 <li href="#">Technology</li>
@@ -22,7 +25,23 @@
         </div>
         
         <div class="bgimg">
-            <img src="welcome.jpg" width="100%">
+            <img src="welcome.jpg" width="100%" class="image">
+            <div id="myList">
+                <ul>
+                    <li href="#">About</li>
+                    <li href="#">Content</li>
+                    <li href="#" id="Technology" onclick="myfun2()">
+                        Technology
+                        <div id="tech">
+                            <ul>
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
             <p class="text">Welcome</p>
         </div>
 
