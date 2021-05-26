@@ -15,12 +15,58 @@ body{
     position:sticky;
 }
 
+.image{
+    height:200vh;
+}
+
 #logo
 {
     color:white;
     font-size: 50px;
     padding-left:15px;
     padding-top: 20px;
+}
+
+#show{
+    display:none;
+    font-size:50px;
+    color:white;
+    padding-right:15px;
+    padding-top:20px;
+    float:right;
+}
+
+#myList{
+    display:none;
+    position:absolute;
+    top:0;
+    right:0;   
+}
+
+#myList ul{
+    float:right;
+    position:absolute;
+    right:3%;
+    top:0;
+    
+}
+
+#myList ul li{
+    color:black;
+    font-size:18px;
+    display:block;
+    width:100%;
+}
+
+#Technology{
+    position:relative;
+}
+
+#tech{
+    display:none;
+    position:absolute;
+    top:50px;
+    right:7%;
 }
 
 ul{
@@ -40,7 +86,6 @@ li:hover{
     background-color: green;
     opacity:0.8;
 }
-
 
 .bgimg{
     position:relative;
@@ -215,9 +260,14 @@ section main div{
 @media(max-width:700px)
 {
 
-    ul{
-        display:none;
+    #show{
+        display: block;
     }
+
+    #headerList{
+        display: none;
+    }
+
     .text{
         top:25%;
         font-size:32px;
@@ -289,6 +339,9 @@ section main div{
 @media(min-width:701px) and (max-width:1100px)
 {
 
+    #show{
+        display: block;
+    }
     ul{
         display:none;
     }
@@ -338,7 +391,5 @@ section main div{
 
     h3{
         font-size: 40px;
-    }
-    
-    
+    }    
 }
